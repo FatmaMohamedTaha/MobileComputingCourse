@@ -1,5 +1,6 @@
 package com.example.fatma.mobileassignment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -35,7 +36,11 @@ public class Login extends AppCompatActivity {
                 }
 
 
-                Toast.makeText(Login.this,"Sign in button",Toast.LENGTH_SHORT).show();
+                    else
+                {
+                    Intent intent = new Intent(Login.this,Home.class);
+                    startActivity(intent);
+                }
             }
         });
 

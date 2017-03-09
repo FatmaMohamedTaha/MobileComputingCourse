@@ -1,5 +1,6 @@
 package com.example.fatma.mobileassignment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.support.design.widget.FloatingActionButton;
@@ -41,7 +42,10 @@ public class Signup extends AppCompatActivity {
                 }
 
                else
-                    Toast.makeText(Signup.this,"Sign up button",Toast.LENGTH_SHORT).show();
+                {
+                    Intent intent = new Intent(Signup.this,Home.class);
+                    startActivity(intent);
+                }
 
             }
         });
